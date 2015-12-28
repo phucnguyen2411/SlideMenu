@@ -12,10 +12,14 @@ class BackTab_TableViewController: UITableViewController {
     
     //Tao danh sach
     var DanhSach:[String]!
+    var thamsoTruyen:NSUserDefaults!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         DanhSach = ["Menu 1", "Menu 2", "Menu 3"]
+        
+        
+        thamsoTruyen = NSUserDefaults()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -86,14 +90,32 @@ class BackTab_TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        //xac dinh cell dang chon
+//        var selectioned = self.tableView.indexPathForCell(sender as! UITableViewCell)
+//        
+//        var chon:Int! = selectioned?.row
+//        print(String(chon))
+        
+        let DecVC = segue.destinationViewController as! ViewController
+        
+        
+        var indexPath : NSIndexPath
+        indexPath = self.tableView.indexPathForSelectedRow!
+        
+        DecVC.varView = indexPath.row
+        
+        
+        
+        
+        
+        
     }
-    */
+
 
 }

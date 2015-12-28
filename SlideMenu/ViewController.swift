@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var Open: UIBarButtonItem!
     
+    @IBOutlet weak var LableSta: UILabel!
+    
+    var varView = Int()
+    var thamsoTruyen:NSUserDefaults!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,9 +24,26 @@ class ViewController: UIViewController {
         Open.target = self.revealViewController()
         
         Open.action = Selector("revealToggle:")
+        thamsoTruyen = NSUserDefaults()
         
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        
+        
+        
+        
+        if (varView == 0){
+            LableSta.text = "String"
+            
+        }
+        
+        else{
+            LableSta.text = "Other"
+        }
+        
+        
+        
+        
         
         
     }
