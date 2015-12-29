@@ -10,9 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var Open: UIBarButtonItem!
-    
-    @IBOutlet weak var LableSta: UILabel!
+
     
     var varView = Int()
     var thamsoTruyen:NSUserDefaults!
@@ -20,27 +18,29 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //setup button item open menu
         // mo open eview
-        Open.target = self.revealViewController()
-        
-        Open.action = Selector("revealToggle:")
-        thamsoTruyen = NSUserDefaults()
-        
+//        Open.target = self.revealViewController()
+//        
+//        Open.action = Selector("revealToggle:")
+//        thamsoTruyen = NSUserDefaults()
+//        
         
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        
-        
-        
-        
-        if (varView == 0){
-            LableSta.text = "String"
-            
-        }
-        
-        else{
-            LableSta.text = "Other"
-        }
-        
+//
+//        
+//        
+//        
+//        if (varView == 0){
+//            LableSta.text = "String"
+//            
+//        }
+//        
+//        else{
+//            LableSta.text = "Other"
+//        }
+//        
         
         
         

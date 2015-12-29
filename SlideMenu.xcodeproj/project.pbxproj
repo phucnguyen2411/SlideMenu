@@ -16,6 +16,7 @@
 		D46FB4481C318FD600D4B4D1 /* SlideMenuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FB4471C318FD600D4B4D1 /* SlideMenuUITests.swift */; };
 		D46FB4581C31985C00D4B4D1 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D46FB4571C31985C00D4B4D1 /* SWRevealViewController.m */; };
 		D46FB45F1C319E9400D4B4D1 /* BackTab_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46FB45E1C319E9400D4B4D1 /* BackTab_TableViewController.swift */; };
+		D482B8541C322A6C007E98AC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D482B8531C322A6C007E98AC /* RootView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		D46FB4561C31985C00D4B4D1 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		D46FB4571C31985C00D4B4D1 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		D46FB45E1C319E9400D4B4D1 /* BackTab_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackTab_TableViewController.swift; sourceTree = "<group>"; };
+		D482B8531C322A6C007E98AC /* RootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				D46FB4591C31986100D4B4D1 /* Supporting Files */,
 				D46FB4271C318FD600D4B4D1 /* AppDelegate.swift */,
 				D46FB4291C318FD600D4B4D1 /* ViewController.swift */,
+				D482B8531C322A6C007E98AC /* RootView.swift */,
 				D46FB42B1C318FD600D4B4D1 /* Main.storyboard */,
 				D46FB42E1C318FD600D4B4D1 /* Assets.xcassets */,
 				D46FB4301C318FD600D4B4D1 /* LaunchScreen.storyboard */,
@@ -281,6 +284,7 @@
 				D46FB4281C318FD600D4B4D1 /* AppDelegate.swift in Sources */,
 				D46FB45F1C319E9400D4B4D1 /* BackTab_TableViewController.swift in Sources */,
 				D46FB4581C31985C00D4B4D1 /* SWRevealViewController.m in Sources */,
+				D482B8541C322A6C007E98AC /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +514,7 @@
 				D46FB44E1C318FD600D4B4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D46FB44F1C318FD600D4B4D1 /* Build configuration list for PBXNativeTarget "SlideMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +523,7 @@
 				D46FB4511C318FD600D4B4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D46FB4521C318FD600D4B4D1 /* Build configuration list for PBXNativeTarget "SlideMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +532,7 @@
 				D46FB4541C318FD600D4B4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
